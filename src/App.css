@@ -28,8 +28,40 @@
   background: linear-gradient(to bottom, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: white;
   text-align: center;
+  align-items: center; 
+}
+
+.shop-banner {
+  background: #fffc00;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #f5ec75, #fffc00);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #f5ec75, #fffc00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+  width: 60%;
+  color: black;
+  align-items: center;
+  height: 45px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.shop-banner h4 {
+  text-align: left;
+  font-family: 'Roboto', sans-serif;
+  padding-left: 5px;
+}
+
+.shop-banner p {
+  text-align: right;
+  font-family: 'Roboto', sans-serif;
+  align-items: center;
+  padding-top: 2em;
+  padding-right: 5px;
+}
+
+.shop-items {
+  width: 60%;
 }
 
 .avatar-img {
-  height: 250px;
+  height: 230px;
 }

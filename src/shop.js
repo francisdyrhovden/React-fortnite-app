@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Grid, Cell } from 'react-mdl';
 import './App.css';
+import Clock from './clock';
 
 function Shop() {
 
@@ -18,30 +19,23 @@ function Shop() {
     }
     return (
         <div className="shop">
-            <Grid className="demo-grid-1">
-                <Cell col={4}>
-                    <h1>Image: </h1>
-                </Cell>
-                <Cell col={4}>
-                    <h1>Name: </h1>
-                </Cell>
-                <Cell col={4}>
-                    <h1>Price: </h1>
-                </Cell>
+            <Grid style={{ paddingTop: '2em' }}>
+                <div className="shop-banner">
+                    <Cell col={8}>
+                        <h4>FORTNITE SHOP</h4>
+                    </Cell>
+                    <Cell col={4}>
+                        <Clock/>
+                    </Cell>
+                </div>
             </Grid>
-            {items.map(item => (
-                <Grid className="demo-grid-1" key={item.itemId}>
-                    <Cell col={4}>
-                        <img className="avatar-img" src={item.item.images.information} alt=""/>
+            <Grid className="shop-items" style={{paddingBottom: '5em'}}>
+                {items.map(item => (
+                    <Cell key={item.itemId} col={3}>
+                        <img className="avatar-img" src={item.item.images.information} alt="" />
                     </Cell>
-                    <Cell col={4}>
-                        <h3>{item.item.name}</h3>
-                    </Cell>
-                    <Cell col={4}>
-                        <h3>{item.store.cost} V-Bucks</h3>
-                    </Cell>
-                </Grid>
-            ))}
+                ))}
+            </Grid>
         </div>
     );
 }

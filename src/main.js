@@ -9,7 +9,7 @@ function Main() {
 
     return (
         <div>
-            <h1>Main</h1>
+            <h1>Under construction, go to shop in the meantime.</h1>
         </div>
     )
 }
