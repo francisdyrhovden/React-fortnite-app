@@ -1,26 +1,20 @@
 import React from 'react';
 import './App.css';
-import { Layout, Header, Drawer, Content, Navigation } from 'react-mdl';
+import { Layout, Header, Content, Navigation } from 'react-mdl';
 import {Link, Switch, Route } from 'react-router-dom'; 
 import Shop from './shop';
 import Main from './main';
 
 function App() {
   return (
-    <div className="demo-big-content">
+    <div>
       <Layout>
-        <Header style={{background: 'black'}} title="Menu" scroll>
+        <Header style={{background: 'black'}} title="FORTNITE" scroll>
           <Navigation>
-            <Link to='/'>Home</Link>
+            <Link to='/'>Stats</Link>
             <Link to='/shop'>Shop</Link>
           </Navigation>
         </Header>
-        <Drawer title="Menu">
-          <Navigation>
-            <Link to='/'>Home</Link>
-            <Link to='/shop'>Shop</Link>
-          </Navigation>
-        </Drawer>
         <Content>
           <div className="page-content" />
           <Switch>
