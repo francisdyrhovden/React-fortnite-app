@@ -1,4 +1,6 @@
-### A web application to keep track of relevant information for me, such as player stats and store items, using a Fortnite API 👌
+#### A web application to keep track of relevant information for me, such as player stats and store items, using a Fortnite API 👌
+
+Live demo: [https://fortnite-app.netlify.com/](https://fortnite-app.netlify.com/)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
