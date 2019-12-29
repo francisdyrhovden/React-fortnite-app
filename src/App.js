@@ -11,15 +11,15 @@ function App() {
       <Layout>
         <Header style={{background: 'black'}} title="FORTNITE" scroll>
           <Navigation>
-            <Link to='/'>Stats</Link>
-            <Link to='/shop'>Shop</Link>
+            <Link to='/'>Shop</Link>
+            <Link to='/main'>Stats</Link>
           </Navigation>
         </Header>
         <Content>
           <div className="page-content" />
           <Switch>
-            <Route exact path="/" component={Main}/>
-            <Route exact path="/shop" component={Shop}/>
+            <Route exact path="/" component={Shop}/>
+            <Route exact path="/main" component={Main}/>
           </Switch>
         </Content>
       </Layout>

@@ -10,7 +10,7 @@ class Clock extends Component {
         }
     }
 
-    componentWillMount() {
+    UNSAFE_componentWillMount() {
         this.getTimeUntil();
     }
 
