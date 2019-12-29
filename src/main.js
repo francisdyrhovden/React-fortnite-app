@@ -37,7 +37,7 @@ function Main() {
 
                 </Cell>
             </Grid>
-            <h2>UNDER CONSTRUCTION, GO TO SHOP IN THE MEANTIME</h2>
+            <h2>UNDER CONSTRUCTION, GO TO SHOP IN THE MEANTIME.</h2>
         </div>
     )
 }
